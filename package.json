@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22.22.0" },
+  "engines": {
+    "node": ">=22.22.0"
+  },
   "scripts": {
     "start": "node server/index.js",
     "build": "npm install --prefix client --include=dev && npm run build --prefix client"
   },
-  "dependencies": { "express": "^5.1.0", "dotenv": "^17.0.0" }
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "mongoose": "^9.10.3"
+  }
 }
